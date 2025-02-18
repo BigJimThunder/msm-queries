@@ -1,0 +1,27 @@
+<h1>Movie #<%= @the_movie.id%> details</h1>
+
+<a href="/movies">Go Back</a>
+
+<dl>
+  <dt>Name</dt>
+  <dd><%= @the_movie.title %></dd>
+
+  <dt>DOB</dt>
+  <dd><%= @the_movie.year %></dd>
+
+  <dt>Duration</dt>
+  <dd><%= @the_movie.duration %></dd>
+
+  <dt>Bio</dt>
+  <dd><%= @the_movie.description %></dd>
+
+  <dt>Image</dt>
+    <dd>
+    <img src="<%= @the_movie.image %>" width="100">
+  </dd>
+
+  <dt>Created at</dt>
+  <dd><%= @the_movie.created_at %></dd>
+
+  <dt>Updated at</dt>
+  <dd><%= @the_movie.updated_at %></dd>
